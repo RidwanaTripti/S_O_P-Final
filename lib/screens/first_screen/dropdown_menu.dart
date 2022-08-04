@@ -8,19 +8,19 @@ class DropDownDiv extends StatefulWidget {
 }
 
 class _DropDownDivState extends State<DropDownDiv> {
+  String dropdownvalue = "ঢাকা";
+  List items = [
+    'ঢাকা',
+    'ময়মনসিংহ',
+    'সিলেট',
+    'রংপুর',
+    'রাজশাহী',
+    'চট্টগ্রাম',
+    'খুলনা',
+    'বরিশাল'
+  ];
   @override
   Widget build(BuildContext context) {
-    String dropdownvalue = "ঢাকা";
-    List items = [
-      'ঢাকা',
-      'ময়মনসিংহ',
-      'সিলেট',
-      'রংপুর',
-      'রাজশাহী',
-      'চট্টগ্রাম',
-      'খুলনা',
-      'বরিশাল'
-    ];
     return DropdownButton(
       value: dropdownvalue,
       items: items
@@ -45,15 +45,15 @@ class DropDownDis extends StatefulWidget {
 
 class _DropDownDisState extends State<DropDownDis> {
   @override
+  String dropdownvalue = 'ময়মনসিংহ';
+  List items = [
+    'ময়মনসিংহ',
+    'শেরপুর',
+    'নেত্রকোনা',
+    'হালুয়াঘাট',
+    'জামালপুর',
+  ];
   Widget build(BuildContext context) {
-    String dropdownvalue = 'ময়মনসিংহ';
-    List items = [
-      'ময়মনসিংহ',
-      'শেরপুর',
-      'নেত্রকোনা',
-      'হালুয়াঘাট',
-      'জামালপুর',
-    ];
     return DropdownButton(
         value: dropdownvalue,
         items: items
@@ -75,16 +75,16 @@ class DropDownArea extends StatefulWidget {
 }
 
 class _DropDownAreaState extends State<DropDownArea> {
+  String dropdownvalue = "ময়মনসিংহ সদর";
+  List items = [
+    'ময়মনসিংহ সদর',
+    'ভালুকা',
+    'ত্রিশাল',
+    'হালুয়াঘাট',
+    'মুক্তাগাছা',
+  ];
   @override
   Widget build(BuildContext context) {
-    String dropdownvalue = "ময়মনসিংহ সদর";
-    List items = [
-      'ময়মনসিংহ সদর',
-      'ভালুকা',
-      'ত্রিশাল',
-      'হালুয়াঘাট',
-      'মুক্তাগাছা',
-    ];
     return DropdownButton(
         value: dropdownvalue,
         items: items

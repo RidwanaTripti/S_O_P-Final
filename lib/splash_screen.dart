@@ -13,32 +13,30 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
-    //final size = MediaQuery.of(context).size;
-
     return SafeArea(
       child: AnimatedSplashScreen(
           splash: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Expanded(
                 child: Container(
-                  height: 150,
-                  width: 110,
                   child: Image(
                     image: AssetImage("bd_map.png"),
                   ),
                 ),
               ),
-              // Expanded(
-              //   child: Container(
-              //     child: Column(
-              //       children: [Text("সেবা"), Text("এখন হাতের মুঠোয়...")],
-              //     ),
-              //   ),
-              // ),
-              // Container(
-              //   child: Text("dgfgjhujh"),
-              // )
+              Container(
+                child: Column(
+                  children: [Text("সেপাই"), Text("...।...")],
+                ),
+              ),
+              Container(
+                child: Column(
+                  children: [
+                    Text('Version 1.1.0'),
+                    Text("Powered by MaxSOP"),
+                  ],
+                ),
+              )
             ],
           ),
           backgroundColor: HexColor("#FF7FC7A1"),

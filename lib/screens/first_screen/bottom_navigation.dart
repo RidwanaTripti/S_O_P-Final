@@ -10,12 +10,20 @@ class BottomNav extends StatefulWidget {
 }
 
 class _BottomNavState extends State<BottomNav> {
+  int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+      type: BottomNavigationBarType.fixed,
+      selectedItemColor: HexColor("#0000"),
+      backgroundColor: HexColor("#FF7FC7A1"),
+      currentIndex: currentIndex,
+      onTap: (index) => setState(() {
+        currentIndex = index;
+      }),
       items: [
         BottomNavigationBarItem(
-            backgroundColor: HexColor("#FF7FC7A1"),
+            // backgroundColor: HexColor("#FF7FC7A1"),
             icon: Icon(
               Icons.person,
               color: HexColor("#0000"),
